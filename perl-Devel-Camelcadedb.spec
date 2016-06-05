@@ -1,6 +1,6 @@
 #
 # Conditional build:
-%bcond_with	tests		# do not perform "make test"
+%bcond_without	tests		# do not perform "make test"
 
 %define		pdir	Devel
 %define		pnam	Camelcadedb
@@ -17,8 +17,8 @@ URL:		http://search.cpan.org/dist/Devel-Camelcadedb/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
-BuildRequires:	perl(JSON::XS) >= 3.02
-BuildRequires:	perl(PadWalker) >= 2.2
+BuildRequires:	perl-JSON-XS >= 2:3.02
+BuildRequires:	perl-PadWalker >= 2.2
 %endif
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
