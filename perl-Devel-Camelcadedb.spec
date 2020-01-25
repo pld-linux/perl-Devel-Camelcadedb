@@ -4,7 +4,6 @@
 
 %define		pdir	Devel
 %define		pnam	Camelcadedb
-%include	/usr/lib/rpm/macros.perl
 Summary:	Devel::Camelcadedb - Perl side of the Perl debugger for IntelliJ IDEA and other JetBrains IDE
 Name:		perl-%{pdir}-%{pnam}
 Version:	1.6.1.2
